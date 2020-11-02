@@ -306,7 +306,8 @@ h2 {
 		        flex-direction: row;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
-		margin: auto 30%;
+		max-width: 40rem;
+		margin: auto;
 	}
 
  .box-1 {
@@ -314,15 +315,6 @@ h2 {
 	 -ms-flex-preferred-size: 100%;
 	     flex-basis: 100%;
  }
-
-.	desktop-bottom {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-ms-flex-wrap: nowrap;
-		    flex-wrap: nowrap;
-	}
 
 	.box-2 {
 		-ms-flex-preferred-size: 50%;

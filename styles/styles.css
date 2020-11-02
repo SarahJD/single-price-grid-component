@@ -260,18 +260,14 @@ h2 {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin: auto 30%;
+		max-width: 40rem;
+		margin: auto;
 	}
 
  .box-1 {
 	 height: 13em;
 	 flex-basis: 100%;
  }
-
-.	desktop-bottom {
-		flex-direction: row;
-		flex-wrap: nowrap;
-	}
 
 	.box-2 {
 		flex-basis: 50%;
