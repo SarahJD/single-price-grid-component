@@ -1,0 +1,285 @@
+/** Used Colors
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+
+/*----------------------------
+	RESET: START
+------------------------------
+https://github.com/hankchizljaw/modern-css-reset/blob/master/dist/reset.css
+/*
+
+
+//* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/*----------------------------
+	Attribution in footer
+----------------------------*/
+.attribution {
+	background-color: inherit;
+	font-size: 0.688rem;
+	color: hsl(179, 62%, 43%);
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover, .attribution a:focus {
+  color: hsl(71, 73%, 54%);
+}
+
+/*----------------------------
+	Page Layout
+----------------------------*/
+
+body {
+	display: flex;
+	padding: 1rem;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Karla', sans-serif;
+	font-size: 1rem;
+	background: hsl(204, 43%, 93%);
+}
+
+// vertically and horizontally center the main content
+// force footer to bottom
+.box-wrapper {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.box-heading {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.box-1 {
+	background-color: white;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.box-1__heading {
+	color: hsl(179, 62%, 43%);
+	font-size: 1.4rem;
+}
+
+h2 {
+	color: hsl(71, 73%, 54%);
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.box-1__paragraph {
+	color: hsl(218, 22%, 67%);
+	font-size: 0.85rem;
+	line-height: 1.6rem;
+	font-weight: 400;
+	opacity: 0.8;
+	margin-bottom: 0.2rem;
+}
+
+.box-2 {
+	background-color: hsl(179, 62%, 43%);
+	filter: brightness(95%);
+	color: white;
+}
+
+.box-2__heading {
+	opacity: 0.9;
+	margin-bottom: 1rem;
+}
+
+.price {
+	display: flex;
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.frequency {
+	font-size: 1rem;
+	font-weight: 400;
+	opacity: 0.5;
+}
+
+.box-2__paragraph {
+	font-size: 0.9rem;
+	font-weight: 400;
+	opacity: 0.7;
+	margin-bottom: 1.8rem;
+}
+
+.sign-up-button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+	border: none;
+  padding: 0.8rem 0;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+	font-weight: 700;
+	border-radius: 0.3rem;
+	box-shadow: 0.1rem 0.1rem 0.1rem hsl(218, 22%, 67%);
+	transition: 0.2s opacity;
+}
+
+.sign-up-button:hover,
+.sign-up-button:focus {
+	  opacity: 0.8;
+	}
+
+.box-3 {
+	background-color: hsl(179, 62%, 43%);
+	color: white;
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.box-3__heading {
+	opacity: 0.7;
+}
+
+.box-3__list {
+	font-size: 0.8rem;
+	opacity: 0.5;
+	line-height: 1.3rem;
+}
+
+@media screen and (min-width: 40em) {
+	.box-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: auto 20%;
+	}
+
+ .box-1 {
+	 height: 13em;
+	 flex-basis: 100%;
+ }
+
+.	desktop-bottom {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.box-2 {
+		flex-basis: 50%;
+		border-radius: 0 0 0 0.5rem;
+	}
+
+	.box-3 {
+		flex-basis: 50%;
+		border-radius: 0 0 0.5rem 0;
+	}
+}
